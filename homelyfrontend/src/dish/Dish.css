@@ -1,0 +1,133 @@
+.dish {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: black;
+}
+.dishHeading {
+  width: 100%;
+  height: 100%;
+  padding: 90px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.headingDish {
+  color: orange;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.paragraphDish {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dishBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.dishBodyDiv {
+  height: 350px;
+  width: 380px;
+  border: 1px solid rgb(145, 115, 60);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.dishImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.dishParagraphImg {
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: 550;
+  color: white;
+}
+.dishNumber {
+  color: white;
+  font-weight: 900;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+.dishInput {
+  width: 50px;
+  height: 25px;
+}
+.dishButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: width 2s;
+  background-color: orange;
+}
+.dishButton:hover {
+  width: 90px;
+  background-image: linear-gradient(orangered, orange);
+}
+
+@media only screen and (min-width: 1200px) {
+  .dishBodyDiv {
+    height: 380px;
+    width: 380px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .dishBodyDiv {
+    height: 300px;
+    width: 270px;
+  }
+  .dishImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dishBodyDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dishImage {
+    width: 100%;
+    height: 100%;
+  }
+  .dishE {
+    width: 100%;
+    height: 100%;
+  }
+  .dishParagraphImg {
+    font-size: 30px;
+  }
+  .dishNumber {
+    font-size: 25px;
+  }
+  .dishForm {
+    padding-top: 20px;
+  }
+  .dishInput {
+    width: 70px;
+    height: 35px;
+  }
+  .dishButton {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .dishBodyDiv {
+    flex-direction: column;
+  }
+}

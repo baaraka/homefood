@@ -1,0 +1,167 @@
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.homeTitles {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.homeTitle {
+  height: 100%;
+  width: 990px;
+  max-width: 100%;
+  margin-left: 50px;
+  padding-left: 25px;
+}
+
+.homeSpan {
+  color: orange;
+}
+.homeTitleHead {
+  font-size: 50px;
+  color: white;
+  padding-right: 10px;
+}
+.homeParagraph {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-right: 10px;
+}
+.homeBtn {
+  font-size: 20px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 2s;
+  background-color: orange;
+}
+.homeBtn:hover {
+  width: 180px;
+  background-image: linear-gradient(orangered, orange);
+}
+.homeImg {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 80px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+.homeImgItem {
+  width: 530px;
+  max-width: 100%;
+  height: 550px;
+}
+.foodOrder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foodOrder1 {
+  padding-left: 50px;
+}
+
+.heading3 {
+  font-size: 30px;
+  color: white;
+}
+.paragraph3 {
+  padding-top: 10px;
+  color: white;
+}
+.aHome {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .homeImgItem {
+    width: 450px;
+    height: 450px;
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .homeImgItem {
+    width: 400px;
+    height: 400px;
+    margin-right: 140px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    overflow: hidden;
+  }
+  .home {
+    padding-top: 80px;
+  }
+  .homeTitles {
+    flex-direction: column;
+  }
+
+  .homeTitle {
+    width: 100%;
+    margin-right: 45px;
+  }
+  .homeImg {
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+  .homeImgItem {
+    width: 500px;
+    height: 500px;
+  }
+  .foodOrder1 {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+  .heading3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .homeImgItem {
+    width: 400px;
+    height: 400px;
+  }
+  .foodOrder {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .homeImgItem {
+    width: 330px;
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .home {
+    overflow: hidden;
+  }
+  .homeImgItem {
+    width: 290px;
+    height: 290px;
+  }
+}

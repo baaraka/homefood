@@ -1,0 +1,143 @@
+.topBar {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+.topBarTitleLeft {
+  height: 100%;
+  width: 100%;
+  flex: 3;
+}
+.topBarTitle {
+  height: 100%;
+  width: 100%;
+  flex: 6;
+}
+.topBarTitleItem {
+  margin-left: 70px;
+  padding: 10px;
+}
+.topBarTitle {
+  width: 100%;
+  height: 100%;
+}
+.topBarCart {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  margin-left: 20px;
+}
+.topBarCartItem {
+  font-size: 20px;
+  display: flex;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: width 2s;
+  background-image: linear-gradient(orangered, orange);
+}
+.topBarCartItem:hover {
+  width: 230px;
+  background-image: linear-gradient(orange, orangered);
+}
+.topInputItem {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.topBarListItem {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+.topBarListItems {
+  padding-left: 25px;
+  cursor: pointer;
+}
+.topCart {
+  margin-right: 15px;
+}
+.aTop {
+  color: inherit;
+  text-decoration: none;
+}
+.toggleMenu {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  width: 70px;
+  z-index: 1000;
+  padding-right: 30px;
+}
+.showBtn {
+  color: white;
+  visibility: hidden;
+  font-size: 25px;
+  cursor: pointer;
+}
+.sideBarTitle {
+  top: 0;
+  flex-wrap: wrap;
+  height: 400px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.sideBarListItems {
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+  list-style: none;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.sideBarCartItem {
+  font-size: 20px;
+  display: flex;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: width 2s;
+  margin-top: 20px;
+  background-image: linear-gradient(orangered, orange);
+}
+
+@media only screen and (max-width: 768px) {
+  .topBar {
+    overflow: hidden;
+  }
+  .topBarTitleItem {
+    right: 50px;
+    position: relative;
+  }
+  .showBtn {
+    visibility: visible;
+  }
+  .topBar {
+    justify-content: space-between;
+  }
+  .topBarTitle {
+    display: none;
+  }
+  .topBarCart {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.test {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  background-color: black;
+}
+.testHead {
+  height: 100%;
+  width: 100%;
+}
+.testHeading {
+  color: orange;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 40px;
+}
+.testParagraph {
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+.testBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+}
+.testBodyList {
+  height: 100%;
+  width: 100%;
+  padding: 0 80px;
+}
+.testBodyListItem {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.testBodyParagraph {
+  color: white;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.testBodyParagraphs {
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* @media only screen and (min-width: 2560px) {
+  .testBody {
+    width: 80%;
+    margin-left: 200px;
+  }
+} */
+@media only screen and (max-width: 768px) {
+  .testBody {
+    flex-direction: column;
+  }
+  .testBodyList {
+    height: auto;
+    padding: 0 35px 55px;
+  }
+}

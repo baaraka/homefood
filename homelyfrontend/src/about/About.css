@@ -1,0 +1,199 @@
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 350px;
+  background-color: black;
+}
+.aboutTitle {
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+}
+.aboutHeading {
+  color: orange;
+  font-size: 50px;
+  text-align: start;
+  margin-left: 70px;
+  padding: 20px 0px;
+}
+.aboutParagraph {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 70px;
+  width: 500px;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+.aboutBtn {
+  font-size: 20px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-left: 70px;
+  cursor: pointer;
+  transition: width 2s;
+  background-color: orange;
+}
+.aboutBtn:hover {
+  width: 180px;
+  background-image: linear-gradient(orangered, orange);
+}
+.aboutImage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  padding-left: 140px;
+  object-fit: cover;
+}
+.aboutImg1 {
+  width: 220px;
+  height: 300px;
+  top: 20px;
+  left: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.aboutImg2 {
+  width: 220px;
+  height: 300px;
+  bottom: 20px;
+  right: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.aboutImage1 {
+  width: 220px;
+  height: 300px;
+  background-color: rgb(33, 32, 32);
+}
+.aboutImage2 {
+  width: 220px;
+  height: 300px;
+  top: 300px;
+  position: relative;
+  background-color: rgb(33, 32, 32);
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    overflow: hidden;
+  }
+
+  .aboutImage {
+    left: 20px;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aboutTitle {
+    margin-left: 90px;
+    padding-left: 60px;
+  }
+  .aboutTitle {
+    margin-left: 10px;
+  }
+  .aboutParagraph {
+    padding-right: 20px;
+  }
+  .aboutImage {
+    right: 160px;
+    position: relative;
+  }
+
+  .aboutImg1 {
+    width: 190px;
+    height: 270px;
+  }
+  .aboutImg2 {
+    width: 190px;
+    height: 270px;
+  }
+  .aboutImage1 {
+    width: 190px;
+    height: 270px;
+  }
+  .aboutImage2 {
+    width: 190px;
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutHeading {
+    right: 40px;
+    position: relative;
+  }
+  .aboutTitle {
+    align-items: center;
+    justify-content: center;
+    bottom: 100px;
+    position: relative;
+  }
+  .aboutImage {
+    bottom: 70px;
+    position: relative;
+  }
+  .aboutParagraph {
+    margin: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .aboutBtn {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .aboutImage {
+    align-items: center;
+    justify-content: center;
+    margin-right: 130px;
+  }
+
+  .aboutImage1 {
+    width: 150px;
+    height: 310px;
+  }
+  .aboutImage2 {
+    width: 150px;
+    height: 310px;
+  }
+  .aboutImg1 {
+    width: 150px;
+    height: 310px;
+  }
+  .aboutImg2 {
+    width: 150px;
+    height: 310px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .aboutImage1 {
+    width: 130px;
+    height: 300px;
+  }
+  .aboutImage2 {
+    width: 130px;
+    height: 300px;
+  }
+  .aboutImg1 {
+    width: 130px;
+    height: 300px;
+  }
+  .aboutImg2 {
+    width: 130px;
+    height: 300px;
+  }
+}
