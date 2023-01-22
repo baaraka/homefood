@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./TopBar.css";
 
 export default function TopBar() {
@@ -27,17 +29,19 @@ export default function TopBar() {
           </a>
         </ul>
       </div>
+
       <div className="topBarCart">
-        <button className="topBarCartItem">
-          <span className="topCart">
-            <i class="topBarCartL fa-solid fa-cart-shopping"></i>
+        <Link className="cartLink" to="cartScreen">
+          <span className="topBarCartItem">
+            <span className="topCart">
+              <i class="topBarCartL fa-solid fa-cart-shopping"></i>
+            </span>
+            Cart
+            <span className="topInput">0</span>
           </span>
-          Cart
-          <span className="topInput">
-            <input className="topInputItem" type="total" />
-          </span>
-        </button>
+        </Link>
       </div>
+
       <div className="toggleMenu">
         <i
           onClick={() => setShow(!show)}
@@ -63,15 +67,13 @@ export default function TopBar() {
               <li className="sideBarListItems">Testimonials</li>
             </a>
           </ul>
-          <button className="sideBarCartItem">
+          <span className="sideBarCartItem">
             <span className="topCart">
               <i class="topBarCartL fa-solid fa-cart-shopping"></i>
             </span>
             Cart
-            <span className="topInput">
-              <input className="topInputItem" type="total" />
-            </span>
-          </button>
+            <span className="topInput">0</span>
+          </span>
         </div>
       ) : null}
     </div>
