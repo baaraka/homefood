@@ -20,11 +20,28 @@ export default function Dish() {
           </div>
           <div className="dishE">
             <p className="dishParagraphImg">Yam and egg sauce</p>
-            <span className="dishNumber">TZS 5000.00/=</span>
-            <form className="dishForm">
-              <input className="dishInput" type="number" placeholder="1" />
-              <button className="dishButton">+ Add</button>
-            </form>
+            <p className="pPrice">
+              price:<span className="dishNumber">TZS 5000.00/=</span>
+            </p>
+            <p className="pStatus">
+              status:
+              <span>In stock</span>
+            </p>
+            <div className="qtyL">
+              <p>
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </p>
+              <p>
+                <button className="dishButton" type="button">
+                  Add To Cart
+                </button>
+              </p>
+            </div>
           </div>
         </div>
         <div className="dishBodyDiv">
