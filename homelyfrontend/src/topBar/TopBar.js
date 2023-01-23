@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
+import Modal from "../modal/Modal";
 import "./TopBar.css";
 
 export default function TopBar() {
   const [show, setShow] = useState(false);
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="topBar">
       <div className="topBarTitleLeft">
@@ -29,19 +30,207 @@ export default function TopBar() {
           </a>
         </ul>
       </div>
-
       <div className="topBarCart">
-        <Link className="cartLink" to="cartScreen">
-          <span className="topBarCartItem">
-            <span className="topCart">
-              <i class="topBarCartL fa-solid fa-cart-shopping"></i>
-            </span>
-            Cart
-            <span className="topInput">0</span>
+        <button onClick={() => setModal(true)} className="topBarCartItem">
+          <span className="topCart">
+            <i class="topBarCartL fa-solid fa-cart-shopping"></i>
           </span>
-        </Link>
+          Cart
+          <span className="topInput">0</span>
+        </button>
       </div>
+      <Modal trigger={modal} setTrigger={setModal} className="popupContainer">
+        <div className="popupContent">
+          <div className="containerBody">
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
 
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
+
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
+
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
+
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
+
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modalBodyDiv">
+              <div className="dishImage">
+                <img
+                  src="https://storage.dado.ng/wp-content/uploads/2019/06/06200804/Webp.net-resizeimage-3.png"
+                  alt=""
+                  className="modalImg"
+                />
+              </div>
+              <div className="dishElite">
+                <p className="dishParagraphImg">Yam and egg sauce</p>
+                <div className="divDiv">
+                  <p>
+                    <span className="dishNumberList">TZS 5000.00/=</span>
+                  </p>
+
+                  <div className="qtyList">
+                    <p>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </p>
+                  </div>
+                  <button className="deleteBtn">
+                    <i className="deleteIcon fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
       <div className="toggleMenu">
         <i
           onClick={() => setShow(!show)}
@@ -67,13 +256,13 @@ export default function TopBar() {
               <li className="sideBarListItems">Testimonials</li>
             </a>
           </ul>
-          <span className="sideBarCartItem">
+          <button onClick={() => setModal(true)} className="sideBarCartItem">
             <span className="topCart">
               <i class="topBarCartL fa-solid fa-cart-shopping"></i>
             </span>
             Cart
             <span className="topInput">0</span>
-          </span>
+          </button>
         </div>
       ) : null}
     </div>
