@@ -59,21 +59,37 @@
   padding: 20px 0px;
   margin-right: 20px;
 }
-.dishInput {
-  width: 50px;
-  height: 25px;
-}
+
 .dishButton {
-  padding: 10px 20px;
-  border-radius: 10px;
   border: none;
+  width: 100%;
+  display: block;
   cursor: pointer;
-  transition: width 2s;
+  padding: 8px 16px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
   background-color: orange;
 }
 .dishButton:hover {
-  width: 90px;
   background-image: linear-gradient(orangered, orange);
+}
+.nameInfo {
+  color: white;
+  padding-bottom: 10px;
+}
+.pStatus {
+  padding: 7px 0;
+  color: white;
+}
+.pPrice {
+  color: white;
+}
+.qtyL {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -109,7 +125,7 @@
     height: 100%;
   }
   .dishParagraphImg {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
   .dishNumber {
     font-size: 25px;
