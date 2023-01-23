@@ -1,0 +1,54 @@
+.popupHeader {
+  width: 70%;
+  max-height: 700px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgb(33, 32, 32);
+}
+.popupH {
+  max-height: 100%;
+}
+.popupHeaderBtn {
+  height: 200px;
+  position: sticky;
+  z-index: 1000;
+  text-align: right;
+  padding: 50px 0;
+}
+.closeButton {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 40px;
+  background-color: orangered;
+}
+.orderButton {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 40px;
+  background-color: orange;
+}
+.divBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.totalAmt {
+  color: white;
+}
+.totalAmount {
+  padding: 10px 50px;
+}
+.amtTotal {
+  color: white;
+}
+.totalAmounts {
+  padding: 10px 50px;
+}
