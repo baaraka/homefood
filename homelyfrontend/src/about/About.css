@@ -35,11 +35,9 @@
   border-radius: 10px;
   margin-left: 70px;
   cursor: pointer;
-  transition: width 2s;
   background-color: orange;
 }
 .aboutBtn:hover {
-  width: 180px;
   background-image: linear-gradient(orangered, orange);
 }
 .aboutImage {
