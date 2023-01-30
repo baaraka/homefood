@@ -17,19 +17,21 @@ export default function Get() {
             decisions fast. Whether you have a busy schedule or just enjoy
             home-cooked food,
           </p>
-          <button className="apple">
-            <span className="logo">
-              <i className="appleLogo fa-brands fa-apple"></i>
-            </span>
-            Download on the <br /> <span className="getIts">App Store</span>
-          </button>
-          <button className="playStore">
-            <span className="logo">
-              <i className="playLogo fa-brands fa-google-play"></i>
-            </span>
-            Get It in <br />
-            <span className="getIt"> Google Play</span>
-          </button>
+          <div className="imageLogo">
+            <button className="apple">
+              <span className="logo">
+                <i className="appleLogo fa-brands fa-apple"></i>
+              </span>
+              Download on the <br /> <span className="getIts">App Store</span>
+            </button>
+            <button className="playStore">
+              <span className="logo">
+                <i className="playLogo fa-brands fa-google-play"></i>
+              </span>
+              Get It in <br />
+              <span className="getIt"> Google Play</span>
+            </button>
+          </div>
         </div>
         <div className="getImage">
           <img
