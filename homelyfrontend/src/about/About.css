@@ -13,7 +13,7 @@
   margin-top: 200px;
 }
 .aboutHeading {
-  color: orange;
+  color: rgb(216, 179, 111);
   font-size: 50px;
   text-align: start;
   margin-left: 70px;
@@ -21,8 +21,8 @@
 }
 .aboutParagraph {
   color: white;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.6;
   margin-left: 70px;
   width: 500px;
   max-width: 100%;
@@ -35,10 +35,7 @@
   border-radius: 10px;
   margin-left: 70px;
   cursor: pointer;
-  background-color: orange;
-}
-.aboutBtn:hover {
-  background-image: linear-gradient(orangered, orange);
+  background-color: rgb(216, 179, 111);
 }
 .aboutImage {
   height: 100%;

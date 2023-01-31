@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   padding-bottom: 30px;
-  background-color: orange;
+  background-color: rgb(216, 179, 111);
 }
 .footerLeft {
   height: 100%;
@@ -15,18 +15,18 @@
   padding: 20px 0;
 }
 .paragraphLeft {
-  line-height: 30px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   padding-bottom: 20px;
 }
 .spanLeft {
-  line-height: 30px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   padding-bottom: 20px;
 }
 .paragraphCenter {
-  line-height: 30px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   padding: 10px 0;
   cursor: pointer;
 }
