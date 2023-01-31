@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: orange;
+  background-color: rgb(216, 179, 111);
 }
 .topBarTitleLeft {
   height: 100%;
@@ -22,6 +22,7 @@
 .topBarTitleItem {
   margin-left: 70px;
   padding: 10px;
+  cursor: pointer;
 }
 .topBarTitle {
   width: 100%;
@@ -43,11 +44,9 @@
   justify-content: center;
   cursor: pointer;
   z-index: -1;
-  background-image: linear-gradient(orangered, orange);
+  background-color: rgb(132, 91, 16);
 }
-.topBarCartItem:hover {
-  background-image: linear-gradient(orange, orangered);
-}
+
 .topInputItem {
   width: 30px;
   height: 30px;
@@ -116,7 +115,7 @@
   cursor: pointer;
   transition: width 2s;
   margin-top: 20px;
-  background-image: linear-gradient(orangered, orange);
+  background-color: rgb(132, 91, 16);
 }
 .topInput {
   width: 30px;
@@ -131,57 +130,6 @@
 .cartLink {
   color: inherit;
   text-decoration: none;
-}
-
-/* popup css */
-
-.popupContainer {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.containerBody {
-  width: 70%;
-  max-height: 300px;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-.modalBodyDiv {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-.modalImg {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.dishElite {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin-left: 10px;
-}
-.deleteBtn {
-  margin-left: 20px;
-}
-.deleteIcon {
-  color: orangered;
-  font-size: 15px;
-}
-.dishNumberList {
-  color: white;
-  margin-left: 10px;
-}
-.qtyList {
-  margin-left: 20px;
-}
-.divDiv {
-  display: flex;
 }
 
 @media only screen and (max-width: 768px) {
@@ -203,22 +151,5 @@
   }
   .topBarCart {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .modalBodyDiv {
-    flex-direction: column;
-  }
-  .modalImg {
-    display: none;
-  }
-  .dishElite {
-    flex-direction: column;
-  }
-  .divDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
