@@ -12,14 +12,15 @@
   justify-content: center;
 }
 .newHeading {
-  color: orange;
+  color: rgb(216, 179, 111);
   font-size: 50px;
   text-align: center;
   padding: 20px 0;
 }
 .newParagraph {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -32,18 +33,15 @@
   border-radius: 10px;
 }
 .newButton {
-  color: white;
   margin-left: 10px;
   padding: 20px 30px;
   border: none;
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: orange;
+  background-color: rgb(216, 179, 111);
 }
-.newButton:hover {
-  background-image: linear-gradient(orangered, orange);
-}
+
 .subscribeParagraph {
   width: 50%;
   height: auto;
