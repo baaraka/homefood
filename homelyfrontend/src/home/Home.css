@@ -25,7 +25,7 @@
 }
 
 .homeSpan {
-  color: orange;
+  color: rgb(216, 179, 111);
 }
 .homeTitleHead {
   font-size: 50px;
@@ -34,8 +34,8 @@
 }
 .homeParagraph {
   color: white;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 1.6;
   padding-top: 30px;
   padding-bottom: 25px;
   padding-right: 10px;
@@ -46,11 +46,9 @@
   padding: 15px 30px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: orange;
+  background-color: rgb(216, 179, 111);
 }
-.homeBtn:hover {
-  background-image: linear-gradient(orangered, orange);
-}
+
 .homeImg {
   display: flex;
   height: 100%;
@@ -84,6 +82,8 @@
 .paragraph3 {
   padding-top: 10px;
   color: white;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .aHome {
   color: inherit;
