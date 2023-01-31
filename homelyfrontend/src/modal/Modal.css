@@ -1,54 +1,153 @@
-.popupHeader {
-  width: 70%;
-  max-height: 700px;
-  margin: auto;
-  border-radius: 10px;
-  background-color: rgb(33, 32, 32);
+.modal {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
-.popupH {
-  max-height: 100%;
-}
-.popupHeaderBtn {
-  height: 200px;
-  position: sticky;
-  z-index: 1000;
-  text-align: right;
-  padding: 50px 0;
-}
-.closeButton {
-  width: 100px;
-  height: 40px;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-right: 40px;
-  background-color: orangered;
-}
-.orderButton {
-  width: 100px;
-  height: 40px;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-right: 40px;
-  background-color: orange;
-}
-.divBtn {
+.modalBody {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+}
+.modalImage {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.modalElite {
+  display: flex;
+}
+.divDiv {
+  display: flex;
+}
+.qtyList {
+  margin-left: 30px;
+}
+.dBtn {
+  color: white;
+  font-size: 20px;
+  padding: 3px 15px;
+  border: none;
+  background-color: rgb(148, 94, 73);
+}
+.pBtn {
+  font-size: 20px;
+  padding: 3px 15px;
+  border: none;
+  background-color: rgb(216, 179, 111);
+}
+.dishNumberList {
+  color: white;
+  margin-left: 40px;
 }
 .totalAmt {
   color: white;
 }
-.totalAmount {
-  padding: 10px 50px;
-}
 .amtTotal {
   color: white;
 }
+.modalParagraphImg {
+  color: white;
+  margin-left: 40px;
+}
+.modalInput {
+  padding: 10px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.popupHeaderBtn {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+.divBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+  justify-content: space-between;
+}
+.totalAmount {
+  margin-left: 80px;
+}
 .totalAmounts {
-  padding: 10px 50px;
+  margin-right: 80px;
+}
+.orderButton {
+  font-size: 20px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(216, 179, 111);
+  margin-left: 80px;
+  margin: auto;
+}
+.orderSuccess {
+  width: 20%;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(216, 179, 111);
+  margin: auto;
+  border-radius: 20px;
+}
+.dvBtn {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.orderSSIcon {
+  font-size: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .modalImage {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .modalBody {
+    flex-direction: column;
+  }
+  .modalElite {
+    flex-direction: column;
+  }
+  .divDiv {
+    flex-direction: column;
+  }
+  .modalImage {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .modalParagraphImg {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .dishNumberLists {
+    margin-bottom: 15px;
+  }
+  .qtyList {
+    margin-left: 0;
+  }
+  .divBtn {
+    flex-direction: column;
+  }
+  .totalAmount {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .totalAmounts {
+    margin-right: 0;
+  }
+  .orderSuccess {
+    width: 70%;
+  }
 }
