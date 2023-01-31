@@ -9,14 +9,15 @@
   width: 100%;
 }
 .testHeading {
-  color: orange;
+  color: rgb(216, 179, 111);
   font-size: 50px;
   text-align: center;
   padding-top: 40px;
 }
 .testParagraph {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   padding-top: 15px;
   text-align: center;
 }
@@ -41,19 +42,15 @@
 .testBodyParagraph {
   color: white;
   font-size: 13px;
+  line-height: 1.6;
   padding-bottom: 20px;
 }
 .testBodyParagraphs {
   color: white;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
-/* @media only screen and (min-width: 2560px) {
-  .testBody {
-    width: 80%;
-    margin-left: 200px;
-  }
-} */
+
 @media only screen and (max-width: 768px) {
   .testBody {
     flex-direction: column;
