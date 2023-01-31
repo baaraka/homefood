@@ -9,6 +9,7 @@ import Testimonial from "./testimonial/Testimonial";
 import New from "./new/New";
 import Footer from "./footer/Footer";
 import { useState } from "react";
+import Modal from "./modal/Modal";
 
 function App() {
   const [product, setProduct] = useState([
@@ -56,21 +57,32 @@ function App() {
   ]);
 
   const [cart, setCart] = useState([]);
+  const [showCart, setShowCart] = useState(false);
   console.log(cart);
   const addToCart = (data) => {
     setCart([...cart, { ...data, quantity: 1 }]);
   };
 
+  const handleShow = (value) => {
+    setShowCart(value);
+  };
+
   return (
     <div className="App">
-      <TopBar cart={cart} />
-      <Home />
-      <Why />
-      <Dish product={product} addToCart={addToCart} />
-      <About />
-      <Get />
-      <Testimonial />
-      <New />
+      <TopBar handleShow={handleShow} count={cart.length} />
+      {showCart ? (
+        <Modal cart={cart} />
+      ) : (
+        <div>
+          <Home />
+          <Why />
+          <Dish product={product} addToCart={addToCart} />
+          <About />
+          <Get />
+          <Testimonial />
+          <New />
+        </div>
+      )}
       <Footer />
     </div>
   );
